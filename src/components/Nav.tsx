@@ -8,7 +8,7 @@ import { useWindowSize } from './resizehook/useSize'
 
 
 interface Size {
-  width: number | undefined;
+  width: any;
   height: number | undefined;
 }
 
@@ -20,11 +20,12 @@ const Nav:React.FC = () => {
 
   useEffect(() =>{
     console.log(size);
-    if(size.width >= 1200) {
-      setIsPhone(false);
-    } else if(size.width < 1200) {
-      setIsPhone(true)
-    }
+      if(size.width >= 1200) {
+        setIsPhone(false);
+      } else if(size.width < 1200) {
+        setIsPhone(true)
+      }
+    
   },[size])
 
   return (

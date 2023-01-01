@@ -11,7 +11,7 @@ import ReviewCard from "../components/ReviewCard"
 const Red:React.FC = () => {
   
   return (
-    <Box pt={12} pb={12} m={12} direction="column">
+    <Box pt={12} pb={12} m={12}>
         <Text pb={2} textAlign="center"  fontWeight={500} color="brand">REVIEWS</Text>
         <Text mb={8} textAlign="center" fontWeight={600} fontSize="2xl">Meet Client Satisfaction</Text>
 
